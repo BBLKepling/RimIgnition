@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[
+      defName="Brazier"
+    ]/comps</xpath>
+    <value>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Fire</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>60000~2400000</spawnIntervalRange>
+        <spawnMaxAdjacent>1</spawnMaxAdjacent>
+      </li>
+    </value>
+  </Operation>
+
+</Patch>

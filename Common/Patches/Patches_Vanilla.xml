@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[
+      defName="Campfire" or 
+      defName="TorchLamp"
+    ]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+    <value>
+      <destroyOnNoFuel>True</destroyOnNoFuel>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[
+      defName="TorchLamp"
+    ]/comps</xpath>
+    <value>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Fire</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>60000~2400000</spawnIntervalRange>
+        <spawnMaxAdjacent>1</spawnMaxAdjacent>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[
+      defName="Campfire"
+    ]/comps</xpath>
+    <value>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Fire</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>30000~1200000</spawnIntervalRange>
+        <spawnMaxAdjacent>1</spawnMaxAdjacent>
+      </li>
+    </value>
+  </Operation>
+
+</Patch>
