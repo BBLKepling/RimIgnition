@@ -26,4 +26,10 @@
     <li IfModActive="VanillaExpanded.VFECore">Mods/Vanilla_Expanded/VFE</li>
     <li IfModActive="DankPyon.Medieval.Overhaul">Mods/Medieval_Overhaul</li>
   </v1.5>
+  <v1.6>
+    <li>Common</li>
+    <li IfModActive="Ludeon.RimWorld.Royalty">Mods/Ludeon/Royalty</li>
+    <li IfModActive="VanillaExpanded.VFECore">Mods/Vanilla_Expanded/VFE</li>
+    <li IfModActive="DankPyon.Medieval.Overhaul">Mods/Medieval_Overhaul</li>
+  </v1.6>
 </loadFolders>
